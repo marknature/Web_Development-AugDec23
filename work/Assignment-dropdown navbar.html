@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drop down menu</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+}
+li {
+    float: left;
+    border-right:1px solid #e1e1e1;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #A020f0;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  min-width: 140px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #A020f0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+<div><ul>
+  <li><a href="#home">Home</a></li>
+  <li class="dropdown">
+    <a href="#about" class="dropbtn">About</a>
+    <div class="dropdown-content">
+	    <a href="#">NatureBoy</a>
+        <a href="#">Auto Biography</a>
+        <a href="#">Achievements</a>
+		<a href="#">Gallary</a>
+		<a href="#">LinkedIn</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#news" class="dropbtn">News</a>
+    <div class="dropdown-content">
+	    <a href="#">National News</a>
+        <a href="#">Global News</a>
+        <a href="#">Local News</a>
+		<a href="#">Breaking News</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#contact" class="dropbtn">Contact Me</a>
+    <div class="dropdown-content">
+	    <a href="#">Email</a>
+        <a href="#">Cell Number</a>
+        <a href="#">Social Media</a>
+    </div>
+  </li>
+  <li style="float:right;"><a href="#Nature">Nature</a></li>
+ </ul></div>
+<h1>Dropdown Menu inside a Navigation Bar; ASSIGNMENT</h1>
+<p>Hover over the menu link to see the dropdown, i tried...</p>
+</body>
+
+</html>

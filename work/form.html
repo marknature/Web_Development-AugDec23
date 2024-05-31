@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Assignment 12/10</title>
+<style>
+h1 {
+ margin-left:120px;
+}
+p {
+ margin-left:120px;
+}
+#navbar__logo {
+    margin:20px 0px 0px 10px;
+    font-size:25px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    background: linear-gradient(to right, #0f0,#A020F3,#ffa500,#A020F0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+fieldset {
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
+  border-top: 0.5px solid orange;
+  border-bottom: 0.5px solid orange;
+  background: #f8f8f8;
+  font-size:18px;
+  font-family:sans-serif;
+  font-weight:200;
+}
+input[type=submit] {
+  border: 2px solid orange;
+  background:#fff;
+  color:#ffa500;
+}
+input[type=reset] {
+  border: 2px solid red;
+  background:#fff;
+  color:#f00;
+}
+input[type=submit]:hover {
+  border: 2px solid orange;
+  background:orange;
+  color:#111;
+}
+input[type=reset]:hover {
+  border: 2px solid red;
+  background:red;
+  color:#111;
+}
+table tr td input[type=text], input[type=password], input[type=email]{
+ width:55%;
+ font-size:15px;
+}
+table tr td{
+  padding:10px 50px;
+}
+table #Q{
+ border:2px solid orange;
+ border-collapse: collapse;
+}
+table #Q tr th{
+  background:#ffa500;
+  color:#fff;
+}
+table #Q tr td{
+  border: 1px solid orange;
+}
+table #Q tr td input[type=text] {
+ width:100%;
+ padding:0;
+}
+</style>
+</head>
+<body>
+<div><a id="navbar__logo">Nature 230378</a></div>
+<h1>Assignment</h1>
+<p>Using HTML Forms and CSS, create the followning Student Registration form.</p>
+<form ><fieldset>
+<table>
+  <tr>
+    <td><label>First Name</label></td>
+    <td><input type = "text" name = "first_name" placeholder="First Name"/>
+	<span style="font-size:10px;"> (Max 30 Charactors A-Z And A-Z)</span></td>
+  </tr>
+  <tr>
+    <td><label>Last Name</label></td>
+    <td><input type = "text" name = "last_name" placeholder="Last Name"/>
+	<span style="font-size:10px;"> (Max 30 Charactors A-Z And A-Z)</span></td>
+  </tr>
+  <tr>
+    <td><label>Date of Birth</label></td>
+    <td><select name="days">
+  <option value="">Days</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+</select>
+<select name="months">
+  <option value="">Months</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+</select>
+<select name="years">
+  <option value="">Years</option>
+  <option value="1985">1985</option>
+  <option value="1986">1986</option>
+  <option value="1987">1987</option>
+  <option value="1988">1988</option>
+  <option value="1989">1989</option>
+  <option value="1990">1990</option>
+  <option value="1991">1991</option>
+  <option value="1992">1992</option>
+  <option value="1993">1993</option>
+  <option value="1994">1994</option>
+  <option value="1995">1995</option>
+  <option value="1996">1996</option>
+  <option value="1997">1997</option>
+  <option value="1998">1998</option>
+  <option value="1999">1999</option>
+  <option value="2000">2000</option>
+  <option value="2001">2001</option>
+  <option value="2002">2002</option>
+  <option value="2003">2003</option>
+  <option value="2004">2004</option>
+  <option value="2005">2005</option>
+  <option value="2006">2006</option></select></td>
+  </tr>
+  <tr>
+    <td><label>Email ID</label></td>
+    <td><input type = "email" name = "email_id" placeholder="Email ID"/></td>
+  </tr>
+  <tr>
+    <td><label>Gender</label></td>
+    <td><input type = "radio" name = "female" value = "on"> Female
+        <input type = "radio" name = "male" value = "on">Male</td>
+  </tr>
+  <tr>
+    <td><label>Address</label></td>
+    <td><textarea rows = "10" cols = "70" name = "address" placeholder="Please enter address & Postal Code..." style="resize: none;"></textarea><br /></td>
+  </tr> 
+  <tr>
+    <td><label>Pin Code</label></td>
+    <td><input type = "password" name = "pincode" placeholder="Pin Code"/></td>
+  </tr>
+  <tr>
+    <td><label>State</label></td>
+    <td><input type = "text" name = "state" placeholder="State"/></td>
+  </tr>
+  <tr>
+    <td><label>City</label></td>
+    <td><input type = "text" name = "city" placeholder="City"/></td>
+  </tr>
+  <tr>
+    <td><label>Country</label></td>
+    <td><input type = "text" name = "country" placeholder="Country"/></td>
+  </tr>
+  <tr>
+	<td><label>Hobbies</label></td>
+	<td><input type = "checkbox" name = "drawing" value = "on">Drawing
+        <input type = "checkbox" name = "singing" value = "on">Singing
+        <input type = "checkbox" name = "dancing" value = "on">Dancing
+        <input type = "checkbox" name = "sketching" value = "on">Sketching</td>
+  </tr>
+  <tr>
+    <td><label>Qualifications</label></td>
+    <td><table id="Q">
+  <tr>
+    <th>SI.No.</th>
+    <th>Examination</th>
+    <th>Board</th>
+	<th>Percentage</th>
+	<th>Year Of Passing</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><input type = "text" name = "examination" placeholder="Examination"/></td>
+    <td><input type = "text" name = "board" placeholder="Board"/></td>
+	<td><input type = "text" name = "percentage" placeholder="Percentage"/></td>
+	<td><input type = "text" name = "yearofpassing" placeholder="Year Of Passing"/></td>
+  </tr>
+    <tr>
+    <td>2</td>
+    <td><input type = "text" name = "examination" placeholder="Examination"/></td>
+    <td><input type = "text" name = "board" placeholder="Board"/></td>
+	<td><input type = "text" name = "percentage" placeholder="Percentage"/></td>
+	<td><input type = "text" name = "yearofpassing" placeholder="Year Of Passing"/></td>
+  </tr>
+    <tr>
+    <td>3</td>
+    <td><input type = "text" name = "examination" placeholder="Examination"/></td>
+    <td><input type = "text" name = "board" placeholder="Board"/></td>
+	<td><input type = "text" name = "percentage" placeholder="Percentage"/></td>
+	<td><input type = "text" name = "yearofpassing" placeholder="Year Of Passing"/></td>
+  </tr></table></td>
+  </tr>
+  <tr>
+    <td><label>Course</label></td>
+    <td><input type = "radio" name = "bca" value = "on">BCA
+        <input type = "radio" name = "mca" value = "on">MCA</td>
+  </tr>
+  <tr>
+    <td><input type="submit" value="Send Now"></td>
+  </tr>
+  <tr>
+    <td><input type="reset" value="Start Over"></td>
+  </tr>
+</table>
+</fieldset></form>
+</body>
+</html>

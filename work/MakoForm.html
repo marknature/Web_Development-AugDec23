@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="Form.css">
+  <style>
+  table, th, td{
+      font-family: sans-serif;
+	  border-collapse: collapse;
+	  border-bottom: 1px solid;
+	  border-color :#FFC000;
+	  paddng: 15px;
+  }
+  table{
+      border: 1px solid;
+	  border-color: #FFC000;
+  }
+  th{
+      background-color: #FFC000;
+	  color: #fff;
+  }
+  input[type=submit]{
+      background-color: #FFF;
+      border: 2px solid #FFC000;
+  }
+    </style>
+</head>
+<body>
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="First Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+	  <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Last Name..">
+      </div>
+	  </div>
+	  <div class="row">
+      <div class="col-25">
+        <label for="Date of Birth ">Date of Birth</label>
+      </div>
+	   <div class="col-75">
+	<select class="form-select" id="day" name="day">
+    <option value = "Days" selected>Days</option>
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+    <option value = "10">10</option>
+    <option value = "11">11</option>
+	<option value = "12">12</option>
+	<option value = "13">13</option>
+	<option value = "14">14</option>
+	<option value = "15">15</option>
+	<option value = "16">16</option>
+    <option value = "17">17</option>
+	<option value = "18">18</option>
+	<option value = "19">19</option>
+	<option value = "20">20</option>
+	<option value = "21">21</option> 
+	<option value = "22">22</option>
+	<option value = "24">23</option>
+	<option value = "25">25</option>
+    <option value = "26">26</option>
+	<option value = "27">27</option>
+	<option value = "28">28</option>
+	<option value = "29">29</option>
+	<option value = "30">30</option>
+	<option value = "31">31</option>
+    </select>
+	<select class="form-select" id="month" name="month">
+    <option value = "Months" selected>Months</option>
+    <option value = "January">January</option>
+	<option value = "February">February</option>
+    <option value = "March">March</option>
+    <option value = "April">April</option>
+	<option value = "May">May</option> 
+	<option value = "June">June</option>
+	<option value = "July">July</option>
+	<option value = "August">August</option>
+	<option value = "September">September</option> 
+    <option value = "October">October</option>
+	<option value = "November">November</option>
+	<option value = "December">December</option>
+    </select>
+    <select class="form-select" id="Year" name="Year">
+    <option value = "Years" selected>Years</option>
+	<option value = "2023">2023</option>
+	<option value = "2022">2022</option>
+	<option value = "2021">2021</option> 
+	<option value = "2020">2022</option>
+	<option value = "2021">2021</option>
+	<option value = "2020">2020</option>
+	</select>
+    </div>  
+	 </div> 
+	<div class="row">
+      <div class="col-25">
+        <label for="Email id">Email id</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Email id" name="Email id" placeholder="Email id">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="Gender">Gender</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" id="gender" name="gender" placeholder="Male">male
+		<input type="radio" id="gender" name="gender" placeholder="Female">female
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="address">Address</label>
+      </div>
+      <div class="col-75">
+        <textarea id="Address" name="Address"  style="height:200px"></textarea>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="Pin Code">Pin Code</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Pin Code" name="Pin Code" placeholder="Pin Code">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="State">State</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="State" name="State" placeholder="State">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="City">City </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="City" name="City" placeholder="City">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="lname">Country</label>
+     </div>
+      <div class="col-75">
+        <input type="text" id="Country" name="Country" placeholder="Country">
+      </div>
+    </div>
+	<div class="row">
+	<div class="col-25">
+	<label> Hobbies</label>
+	</div>
+	<div class="col-75">
+	     <input type="checkbox" id="Drawing" name="Drawing" value="Drawing">
+		 <label for="Drawing">Drawing</label>
+    <input type="checkbox" id="Singing" name="Singing" value="Singing">
+	<label for="Singing">Singing</label>
+    <input type="checkbox" id="Dancing" name="Dancing" value="Dancing"> 
+	<label for="Dancing">Dancing</label>
+ <input type="checkbox" id="Sketching" name="Sketching" value="Sketching">
+ <label for="Sketching">Sketching</label>
+ </div>
+</div> 
+	<div class="row">
+      <div class="col-25">
+	<label>Qualifications</label>
+	</div>
+      <div class="col-95">
+	<table >
+  <tr align="center" bgcolor="orange">
+    <th><font color="white">SI.No</font></th>
+    <th><font color="white">Examination</font></th>
+    <th><font color="white">Board</font></th>
+    <th><font color="white">Percentage</font></th>
+    <th><font color="white">Year Of Passing </font></th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td><input type = "text" placeholder = "Examination" Name= "exam name"/></td>
+  <td><input type = "text" placeholder = "Board Name" Name= "Board Name"/></td>
+  <td><input type = "text" placeholder = "Percentage" Name= "Percentage"/></td>
+   <td><input type = "text" placeholder = "Year Of Passing" Name= "Year Of Passing"/></td>
+   </tr>
+   <tr>
+  <td>2</td>
+  <td><input type = "text" placeholder = "Examination" Name= "exam name"/></td>
+  <td><input type = "text" placeholder = "Board Name" Name= "Board Name"/></td>
+  <td><input type = "text" placeholder = "Percentage" Name= "Percentage"/></td>
+   <td><input type = "text" placeholder = "Year Of Passing" Name= "Year Of Passing"/></td>
+   </tr>
+   <tr>
+  <td>3</td>
+  <td><input type = "text" placeholder = "Examination" Name= "exam name"/></td>
+  <td><input type = "text" placeholder = "Board Name" Name= "Board Name"/></td>
+  <td><input type = "text" placeholder = "Percentage" Name= "Percentage"/></td>
+   <td><input type = "text" placeholder = "Year Of Passing" Name= "Year Of Passing"/></td>
+   </tr></table></td>
+    </div>
+	</div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">Course</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" id="BCA" name="BCA" placeholder="Male">BCA
+		<input type="radio" id="MCA" name="MCA" placeholder="Female">MCA
+      </div>
+	  </div>
+	  
+    <div class="row">
+	      <div class="col-25">
+      <input type="submit" value="Send Now" style="color:#FFC000; float: left;">
+    </div>
+	</div>
+  </form>
+</div>
+	</body>
+	

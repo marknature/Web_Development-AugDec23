@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation Example</title>
+</head>
+<body>
+<h2>Sample Form with Validation</h2>
+<form name="myForm" action="submit.php" onsubmit="return validateForm()">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" required><br><br>
+<label>Gender:</label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other<br><br>
+<label for="terms">Accept Terms and Conditions:</label>
+<input type="checkbox" id="terms" name="terms" required><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+<script>
+function validateForm() {
+// Get references to the form elements
+var name = document.forms["myForm"]["name"].value;
+var email = document.forms["myForm"]["email"].value;
+var gender = document.forms["myForm"]["gender"].value;
+var terms = document.forms["myForm"]["terms"].checked;
+// Check if the name field is empty
+if (name == "") {
+alert("Name must be filled out");
+return false;
+}
+// Check if the email field is empty and follows a basic email pattern
+if (email == "" || !/^\S+@\S+\.\S+$/.test(email)) {
+alert("Email must be filled out with a valid format");
+return false;
+}
+// Check if a gender option is selected
+if (gender == "") {
+alert("Please select your gender");
+return false;
+}
+// Check if the terms checkbox is checked
+if (!terms) {
+alert("You must accept the terms and conditions");
+return false;
+}
+}
+</script>
+</html>
